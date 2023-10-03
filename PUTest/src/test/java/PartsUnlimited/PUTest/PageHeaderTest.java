@@ -15,7 +15,7 @@ public class PageHeaderTest extends LoginPage {
 		HomePage HP = new HomePage();
 		HP.getpagetitle();
 		String PageTitle = driver.getTitle();
-		Assert.assertEquals(PageTitle, "Home Page - Testing – Parts Unlimited");
+		Assert.assertEquals(PageTitle, "Home Page - Testing123 – Parts Unlimited");
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		//List<WebElement> links = driver.findElements(By.xpath("//div[@class='hidden-xs']/ul/li/a"));
 		for (WebElement ele : links){
